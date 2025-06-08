@@ -47,12 +47,6 @@ docker exec -it magento php bin/magento cache:flush
 - Cena jest dynamiczna – każda zmiana w panelu admina lub przez CLI jest od razu widoczna na froncie.
 - Kod modułu znajduje się w katalogu: `magento/app/code/Vendor/ShippingInfo`
 
----
-
-## Autor
-
-Magento + Docker + Vendor_ShippingInfo – gotowe środowisko developerskie z dynamiczną informacją o wysyłce na karcie produktu.
-
 ## Wymagania
 
 - Docker
@@ -111,9 +105,9 @@ docker exec -it magento php bin/magento setup:upgrade
 
 7. Skonfiguruj Elasticsearch:
 ```bash
-docker exec -it magento php bin/magento config:set catalog/search/engine elasticsearch7
-docker exec -it magento php bin/magento config:set catalog/search/elasticsearch7_server_hostname elasticsearch
-docker exec -it magento php bin/magento config:set catalog/search/elasticsearch7_server_port 9200
+docker exec -it magento php bin/magento config:set catalog/search/engine elasticsearch8
+docker exec -it magento php bin/magento config:set catalog/search/elasticsearch8_server_hostname elasticsearch
+docker exec -it magento php bin/magento config:set catalog/search/elasticsearch8_server_port 9200
 ```
 
 8. Skonfiguruj Redis dla cache:
@@ -190,3 +184,7 @@ docker exec -it magento php bin/magento cache:flush
 - Język domyślny: Polski (pl_PL)
 - Waluta: PLN
 - Strefa czasowa: Europe/Warsaw 
+
+## Autor
+
+G. Skotniczny - zespół-IT.pl
