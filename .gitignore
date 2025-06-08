@@ -1,0 +1,27 @@
+# Magento 2 standard
+/app/code/*/.DS_Store
+/app/design/*/.DS_Store
+/app/etc/env.php
+/app/etc/config.php
+/var/
+/generated/
+/vendor/
+/node_modules/
+/pub/static/
+/pub/media/tmp/
+
+# Composer
+composer.lock
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# System
+.DS_Store
+Thumbs.db
